@@ -1,0 +1,139 @@
+2019-09-29 00:44:06,012 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 00:44:23,630 ERROR: Exception on /edit_profile [GET] [in c:\code\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\code\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Code\microblog\app\routes.py", line 92, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "c:\code\microblog\venv\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Code\microblog\app\forms.py", line 36, in __init__
+    super(EditProfileForm, self).__init__(*args, **kwargs)
+NameError: name 'kwargs' is not defined
+2019-09-29 00:48:25,507 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 00:48:35,204 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 00:53:05,469 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:05:53,710 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:06:03,461 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:33:22,220 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:33:45,121 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:34:31,297 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:35:42,023 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:36:48,305 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:37:15,591 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:38:03,951 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:38:51,685 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:39:27,796 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:39:35,887 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:44:47,874 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 17:44:58,714 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 18:26:28,767 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 18:26:39,581 ERROR: Exception on /index [GET] [in c:\code\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\code\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Code\microblog\app\routes.py", line 29, in index
+    return render_template("index.html", title = 'home page', posts = posts)
+  File "c:\code\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\code\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Code\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Code\microblog\app\templates\base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Code\microblog\app\templates\index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2019-09-29 18:31:50,830 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 20:25:41,411 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 20:25:47,958 ERROR: Exception on / [GET] [in c:\code\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\code\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Code\microblog\app\routes.py", line 21, in index
+    return render_template("index.html", title='Home Page', form=form, posts=posts)
+  File "c:\code\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\code\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Code\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Code\microblog\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Code\microblog\app\templates\index.html", line 18, in block "content"
+    {% include '_pos.html' %}
+  File "c:\code\microblog\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\code\microblog\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: _pos.html
+2019-09-29 20:26:05,628 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 20:28:45,739 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 20:30:19,798 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 20:36:13,590 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 20:39:27,524 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 20:49:04,993 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 21:25:17,079 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 21:30:34,964 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-09-29 21:31:27,645 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:43]
+2019-10-01 00:31:03,288 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:45]
+2019-10-01 00:36:28,395 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:45]
+2019-10-01 00:48:08,092 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:45]
+2019-10-01 00:50:02,767 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:45]
+2019-10-01 00:53:13,180 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:45]
+2019-10-01 00:58:49,874 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]

@@ -1,0 +1,115 @@
+2019-10-01 00:59:04,115 ERROR: Exception on /reset_password_request [GET] [in c:\code\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Code\microblog\app\routes.py", line 154, in reset_password_request
+    form = ResetPasswordForm()
+NameError: name 'ResetPasswordForm' is not defined
+2019-10-01 01:00:07,102 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]
+2019-10-01 01:02:40,267 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]
+2019-10-01 01:04:27,956 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]
+2019-10-01 01:06:44,027 ERROR: Exception on /reset_password_request [POST] [in c:\code\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Code\microblog\app\routes.py", line 158, in reset_password_request
+    send_password_reset_email(user)
+TypeError: send_password_reset_email() missing 4 required positional arguments: 'sender', 'recipients', 'text_body', and 'html_body'
+2019-10-01 23:36:30,221 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]
+2019-10-01 23:54:46,360 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]
+2019-10-01 23:57:24,063 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]
+2019-10-01 23:57:54,116 ERROR: Exception on /reset_password_request [POST] [in c:\code\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Code\microblog\app\routes.py", line 158, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Code\microblog\app\email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Password', sender = app.config['ADMINS'][0],
+NameError: name 'send_email' is not defined
+2019-10-01 23:58:45,308 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]
+2019-10-01 23:59:06,589 ERROR: Exception on /reset_password_request [POST] [in c:\code\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\code\microblog\venv\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "c:\code\microblog\venv\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "c:\code\microblog\venv\lib\site-packages\flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 852, in sendmail
+    self.ehlo_or_helo_if_needed()
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 600, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 440, in ehlo
+    self.putcmd(self.ehlo_msg, name or self.local_hostname)
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\code\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\code\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Code\microblog\app\routes.py", line 158, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Code\microblog\app\email.py", line 16, in send_password_reset_email
+    html_body = render_template('email/reset_password.html', user = user, token = token))
+  File "C:\Code\microblog\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "c:\code\microblog\venv\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "c:\code\microblog\venv\lib\site-packages\flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 984, in quit
+    res = self.docmd("quit")
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 420, in docmd
+    self.putcmd(cmd, args)
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "C:\Users\fliu23\AppData\Local\Programs\Python\Python37\lib\smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2019-10-02 00:01:15,318 INFO: Microblog startup [in C:\Code\microblog\app\__init__.py:44]
